@@ -1,0 +1,36 @@
+<!-- String interpolation  -->
+<p>String Interpolation</p>
+<p>
+  {{homeTitle}}
+</p>
+
+<!-- ng-content directive -->
+<p>Ng- Content directive</p>
+<ng-content></ng-content>
+
+<!-- Property binding -->
+<p>Property binding</p>
+<div>
+  <input [value]="myString">
+</div>
+<div>
+  <input [required]="myBoolean">
+</div>
+
+<!-- Event binding -->
+<p>Event binding</p>
+  <button (click)="alertMe()">Click Me</button>
+
+
+  <button (click)="alertMeWithValue('Hello Event Binding')">Click Me</button>
+
+  <!-- Two way data binding -->
+
+<p>Two way data binding</p>
+
+<label >Ninja : </label>
+<input [(ngModel)]="ninja.name"/>
+<label >Belt :</label>
+<input [(ngModel)]="ninja.belt"/>
+<h2>{{ninja.name}}</h2>
+<h2>{{ninja.belt}}</h2>
